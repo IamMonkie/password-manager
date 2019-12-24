@@ -11,17 +11,18 @@
     <!-- -------------------------------- style -------------------------------- -->
     <link rel="stylesheet" href="assets/style.css" />
 
-    <title>Password Generator</title>
+    <title class="title">Password Generator</title>
   </head>
   <body>
-    <div class="container">
+    <div class="container" class="characterAmountContainer"> 
       <h1>Password Generator</h1>
-      <h3>Password</h3>
-      <input>
-          <label for="charLimitNumber">Number of Characters</label>
+      <h3 class="passwordDisplay">Password</h3>
+      <form class="form"> 
+        <label for="charLimitNumber">Number of Characters</label>
+          <div>
           <input type="range" min="1" max="64" id="charLimitRange" value="10"></input>
-          <input type="number" id="charLimitNumber" value="10"></input>
-
+          <input class="numberInput" type="number" id="charLimitNumber" value="10"></input>
+        </div>
           <label for="includeUpperCase">Include Uppercase</label>
           <input type="checkbox" id="includeUpperCase"></input>
 
@@ -31,7 +32,7 @@
           <label for="includeSymbols">Include Symbols</label>
           <input type="checkbox" id="includeSymbols"></input>
 
-          <button type="submit">Generate Password</button>
+          <button class="btn" type="submit">Generate Password</button>
       </form>
     </div>
   </body>
